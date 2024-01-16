@@ -17,8 +17,5 @@ Contents
 
 .. toctree::
 
-   Usage
-   ROS_Humble
-   Motors 
-   3D liDAR
-   API
+   usage
+   api
