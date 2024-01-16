@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Dbot_ROS_Humble'
+copyright = '2024, Pejman'
+author = 'Pejman Habibiroudkenar'
 
 release = '0.1'
 version = '0.1.0'
