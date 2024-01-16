@@ -19,4 +19,6 @@ Contents
 
    usage
    roshumble
+   motors
+   velodyne
    api
