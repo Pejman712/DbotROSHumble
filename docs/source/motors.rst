@@ -1,4 +1,4 @@
-Velodyne VLP16
+Motors 
 =====
 
 .. _installation:
