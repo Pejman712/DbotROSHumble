@@ -16,7 +16,7 @@ This node publishes Velodyne packets and points. You can visualize these points 
 Once RVIZ is running, navigate to the lower left corner and click on the ``"add"`` option. In the 'Add' window, go to the "by topics" tab and select 'point_clouds'. You will now be able to see the Velodyne points in real-time.
 
 Configuring Velodyne IP
-=======================
+---------------
 
 .. note::
 
