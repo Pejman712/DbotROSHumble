@@ -1,3 +1,3 @@
-Dbot repo for ROS1
+Dbot repo for ROS2
 =======================================
 
