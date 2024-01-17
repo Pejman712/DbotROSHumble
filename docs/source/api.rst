@@ -7,8 +7,6 @@ Hello Dbot Publisher
 
 The Hello Dbot publisher is a simple ROS2 node that publishes "Hello, Dbot" messages. This document provides an overview of its functionality and instructions for use.
 
-Installation
-------------
 
 Ensure ROS2 is installed on your system. If not, follow the installation instructions on the ROS2 website.
 
