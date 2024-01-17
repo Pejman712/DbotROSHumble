@@ -33,13 +33,13 @@ You can now publish your target speed to cmd_val, and the motor will follow. In 
 .. code-block:: console
 
     $ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "linear:
-  x: 5.0
-  y: 0.0
-  z: 0.0
-angular:
-  x: 0.0
-  y: 0.0
-  z: 0.0"
+      x: 5.0
+      y: 0.0
+      z: 0.0
+    angular:
+      x: 0.0
+      y: 0.0
+      z: 0.0"
 
 The dbot ROS humble package is also equipped with an odometry estimator based on wheel speed. You can run this node:
 
