@@ -13,40 +13,21 @@ This node publishes the velodyne packets and points. You can visualize the velod
 
     $ rviz2 rivz2 -f velodyne 
 
-Once the rviz program shows up, go to the button left and press the add options. In add window go to the "by topics " tab and select point_clouds. Now you can see the velodyne points in real time. 
+Once the rviz program shows up, go to the button left and press the ``"add"`` options. In add window go to the "by topics " tab and select point_clouds. Now you can see the velodyne points in real time. 
 
 Configuring Velodyne ip
 =====
+.. note::
 
+   Do NOT Change ip address unless you are not reciving any points
 
-
-.. _installation:
-
-Installation
-------------
-
-To use Lumache, first install it using pip:
+If the connenction between the computer and velodyne is compormize you can reset the ip adress by trying follwing ip addresses 
 
 .. code-block:: console
 
-   (.venv) $ pip install lumache
+    $ sudo route add 192.168.1.100 enp89s0
+    $ sudo route add 192.168.1.201 enp89s0
+    $ sudo route add 192.168.1.255 enp89s0
 
-Creating recipes
-----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
 
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
