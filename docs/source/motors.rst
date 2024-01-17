@@ -10,7 +10,7 @@ The wheel control is divided into three sections: Motor Controller (ZLTECH ZLA80
 - zlac8015d.eds: An electronic data sheet that zlac80115d_canopen.py reads for creating functions.
 
 ROS2 Motor Topics
-=================
+---------------
 
 .. note::
 
@@ -50,7 +50,7 @@ The dbot ROS humble package is also equipped with an odometry estimator based on
 This node publishes the odom topic, where you can access x and y direction pose. A sample code to read positions is provided in the API section.
 
 Joystick Control
-================
+---------------
 
 The Dbot wheel can be controlled with a joystick. First, ensure the joystick is connected to the Dbot by testing the output of:
 
