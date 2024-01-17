@@ -3,7 +3,7 @@ API
 This section will provide 3 sample codes for your projects namely, simple publsiher, simpler listener, odometry position print.
 
 Hello Dbot Publisher
-======
+---------------
 
 The Hello Dbot publisher is a simple ROS2 node that publishes "Hello, Dbot" messages. This document provides an overview of its functionality and instructions for use.
 
@@ -88,7 +88,7 @@ You should see "Hello, Dbot" messages being printed at regular intervals.
 
 
 Hello Dbot Subscriber
-=====================
+---------------
 
 The Hello Dbot subscriber is a ROS2 node that subscribes to messages on the "hello_dbot" topic. It prints out each "Hello, Dbot" message it receives.
 
@@ -148,7 +148,7 @@ To use this subscriber node:
 This node can be used in conjunction with the Hello Dbot publisher to demonstrate basic ROS2 pub/sub functionality.
 
 Odom Position Subscriber
-========================
+---------------
 
 The Odom Position Subscriber is a ROS2 node that subscribes to the `odom` (odometry) topic and prints the x and y positions. This is typically used in robotics to track the position of a robot.
 
