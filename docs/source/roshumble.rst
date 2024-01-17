@@ -1,23 +1,38 @@
 ROS Humble
 =====
 
-.. _introduction:
 
 Why ROS Humble?
 ------------
-ROS (Robot Operating System) is an open-source robotic platform designed for academic and industrial applications. ROS 2, including the Humble Hawksbill version, enhances the strengths of ROS 1 in several ways:
+ROS is an open-source robotic platform designed for both academic and industrial applications. The latest iteration, ROS 2, builds upon the strengths of ROS 1 and introduces several significant improvements.
 
-    Improved Security Features: ROS 2 places a stronger emphasis on security, offering tools and features like secure node communication and access control. This is crucial for applications in sensitive or critical environments.
+Improvements in ROS 2
+---------------------
 
-    Enhanced Real-Time Capabilities: ROS 2 is tailored for real-time computing, essential for robotics applications that demand precise timing and high reliability. This marks a significant advancement over ROS Noetic, which offers limited real-time support.
+1. **Improved Security Features**
+   ROS 2, particularly in its Humble Hawksbill version, emphasizes security. It offers tools for secure node communication and access control, essential for sensitive or critical applications.
 
-    Cross-Platform Compatibility: ROS 2 enhances compatibility across various operating systems, including Linux, macOS, and Windows. This broadens the scope for developing and deploying ROS applications in diverse settings.
+2. **Enhanced Real-Time Capabilities**
+   Tailored for real-time computing, ROS 2 is crucial for applications requiring precise timing and high reliability. This is a notable enhancement over ROS Noetic's limited real-time support.
 
-    Quality of Service (QoS) Settings: ROS 2 introduces customizable QoS settings, allowing better control over node communication. This fine-tuning is vital for the reliability and efficiency of robotic systems.
+3. **Cross-Platform Compatibility**
+   ROS 2 improves compatibility across Linux, macOS, and Windows, facilitating development and deployment in varied environments.
 
-    Modernized Underlying Architecture and Communication Layer: Utilizing DDS (Data Distribution Service) as its core middleware, ROS 2 ensures more robust and scalable communication compared to ROS Noetic. This modern architecture is better suited for complex and distributed robotic systems.
+4. **Quality of Service (QoS) Settings**
+   With customizable QoS settings, ROS 2 allows for refined control over node communication, crucial for system reliability and efficiency.
 
-For existing ROS users, ROS 2 will feel familiar yet distinct enough that they can operate commands without needing to review new lines. Notably, ROS 2 eliminates the need for the roscore command to start the system; any ROS 2 command automatically initiates ROS. Like its predecessor, ROS 2 operates on a subscriber and publisher method. This project utilizes ROS Humble, which is supported until 2027. To install ROS Humble and for more information on its usage, you can refer to the ROS Humble documentation `here <https://docs.ros.org/en/humble/index.html>.. This page provides essential commands and cheat codes required to operate a robot with ROS 2. If you are not familiar with any ROS version, it is recommended to read the documentation. To further enhance your knowledge, consider reading "A Concise Introduction to Robot Programming with ROS 2."
+5. **Modernized Architecture and Communication Layer**
+   Using DDS (Data Distribution Service) for its middleware, ROS 2 provides robust, scalable communication, a significant upgrade over ROS Noetic.
+
+ROS 2 for Existing ROS Users
+----------------------------
+
+For those familiar with ROS, ROS 2 will feel intuitive yet distinct enough to operate without constant reference to new documentation. One key change in ROS 2 is the elimination of the `roscore` command; the system starts automatically with any ROS 2 command. Like ROS, ROS 2 uses a subscriber and publisher method.
+
+Utilizing ROS Humble
+--------------------
+
+This project uses ROS Humble, supported until 2027. For installation and usage instructions, refer to the `ROS Humble documentation <https://docs.ros.org/en/humble/index.html>`_. This guide provides essential commands and cheat codes for operating robots with ROS 2. If you are new to ROS, reviewing this documentation is recommended. For an in-depth understanding, consider reading "A Concise Introduction to Robot Programming with ROS 2."
 
 
 ROS Humble Cheat Sheet
