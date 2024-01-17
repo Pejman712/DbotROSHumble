@@ -36,7 +36,7 @@ This project uses ROS Humble, supported until 2027. For installation and usage i
 
 
 ROS Humble Cheat Sheet
-======================
+---------------------
 
 This cheat sheet covers basic commands and operations in ROS Humble.
 
