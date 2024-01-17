@@ -1,9 +1,9 @@
 API
 ===
-This section will provide 4 sample codes for your projects namely, simple publsiher, simpler listener, odometry position print, and reading canopen 
+This section will provide 3 sample codes for your projects namely, simple publsiher, simpler listener, odometry position print.
 
 Hello Dbot Publisher
-====================
+======
 
 The Hello Dbot publisher is a simple ROS2 node that publishes "Hello, Dbot" messages. This document provides an overview of its functionality and instructions for use.
 
