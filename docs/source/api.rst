@@ -87,3 +87,131 @@ To verify the publisher is working, listen to the topic in another terminal:
    ros2 topic echo /hello_dbot
 
 You should see "Hello, Dbot" messages being printed at regular intervals.
+
+
+Hello Dbot Subscriber
+=====================
+
+The Hello Dbot subscriber is a ROS2 node that subscribes to messages on the "hello_dbot" topic. It prints out each "Hello, Dbot" message it receives.
+
+Subscriber Node
+---------------
+
+The subscriber node is written in Python. It listens to the `hello_dbot` topic and logs each message received.
+
+.. code-block:: python
+
+   # hello_dbot_subscriber.py
+   import rclpy
+   from rclpy.node import Node
+   from std_msgs.msg import String
+
+   class HelloDbotSubscriber(Node):
+
+       def __init__(self):
+           super().__init__('hello_dbot_subscriber')
+           self.subscription = self.create_subscription(
+               String,
+               'hello_dbot',
+               self.listener_callback,
+               10)
+           self.subscription  # prevent unused variable warning
+
+       def listener_callback(self, msg):
+           self.get_logger().info('Received: "%s"' % msg.data)
+
+   def main(args=None):
+       rclpy.init(args=args)
+       hello_dbot_subscriber = HelloDbotSubscriber()
+       rclpy.spin(hello_dbot_subscriber)
+       hello_dbot_subscriber.destroy_node()
+       rclpy.shutdown()
+
+   if __name__ == '__main__':
+       main()
+
+Usage
+-----
+
+To use this subscriber node:
+
+1. Ensure the ROS2 environment is sourced.
+
+2. Run the subscriber node with:
+
+   .. code-block:: bash
+
+      ros2 run [package_name] hello_dbot_subscriber
+
+   Replace `[package_name]` with the name of your ROS2 package.
+
+3. The subscriber will start and print out "Hello, Dbot" messages as they are received from the publisher.
+
+This node can be used in conjunction with the Hello Dbot publisher to demonstrate basic ROS2 pub/sub functionality.
+
+Odom Position Subscriber
+========================
+
+The Odom Position Subscriber is a ROS2 node that subscribes to the `odom` (odometry) topic and prints the x and y positions. This is typically used in robotics to track the position of a robot.
+
+Subscriber Node
+---------------
+
+The subscriber node is written in Python. It listens to the `odom` topic, which is of the type `nav_msgs/msg/Odometry`, and logs the x and y position coordinates.
+
+.. code-block:: python
+
+   # odom_position_subscriber.py
+   import rclpy
+   from rclpy.node import Node
+   from nav_msgs.msg import Odometry
+
+   class OdomPositionSubscriber(Node):
+
+       def __init__(self):
+           super().__init__('odom_position_subscriber')
+           self.subscription = self.create_subscription(
+               Odometry,
+               'odom',
+               self.odom_callback,
+               10)
+           self.subscription  # prevent unused variable warning
+
+       def odom_callback(self, msg):
+           position = msg.pose.pose.position
+           self.get_logger().info(f'Position: x={position.x}, y={position.y}')
+
+   def main(args=None):
+       rclpy.init(args=args)
+       odom_position_subscriber = OdomPositionSubscriber()
+       rclpy.spin(odom_position_subscriber)
+       odom_position_subscriber.destroy_node()
+       rclpy.shutdown()
+
+   if __name__ == '__main__':
+       main()
+
+Usage
+-----
+
+To use this subscriber node:
+
+1. Ensure the ROS2 environment is sourced.
+
+2. Place the script in the `src` directory of your ROS2 package.
+
+3. Build the package using `colcon build`.
+
+4. Run the subscriber node with:
+
+   .. code-block:: bash
+
+      ros2 run [package_name] odom_position_subscriber
+
+   Replace `[package_name]` with the name of your ROS2 package.
+
+5. The subscriber will start and print out the x and y positions as they are received from the `odom` topic.
+
+This node is useful for tracking the real-time position of a robot in a 2D space, especially in a simulation or testing environment.
+
+
