@@ -28,7 +28,7 @@ You can now initiate the motor driver node by running:
 
     $ ros2 run motor_driver motor_bringup
 
-This node creates 1 subscriber, cmd_Val, receiving twist messages, and 2 publishers, left_velocity_rpm and right_velocity_rpm, as float64 messages in rpm.
+This node creates 1 subscriber, cmd_vel, receiving twist messages, and 2 publishers, left_velocity_rpm and right_velocity_rpm, as float64 messages in rpm.
 
 You can now publish your target speed to cmd_val, and the motor will follow. In a new terminal, you can test it with the following command:
 
