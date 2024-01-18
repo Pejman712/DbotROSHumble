@@ -17,5 +17,6 @@ Contents
    motors
    velodyne
    camera
+   launch
    usage
    api
