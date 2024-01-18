@@ -14,7 +14,7 @@ ROS2 Motor Topics
 
 .. note::
 
-The follwing command is implemented in system reboot so you do not need to add it:
+    The follwing command is implemented in system boot up so you do not need to add it:
 
 .. code-block:: console
 
