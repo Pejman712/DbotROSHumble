@@ -14,11 +14,13 @@ ROS2 Motor Topics
 
 .. note::
 
-Before using ROS2, the link between the motors and the computer needs to be established, which is accomplished by the following command:
+The follwing command is implemented in system reboot so you do not need to add it:
 
 .. code-block:: console
 
     $ sudo ip link set can0 up type can bitrate 500000
+
+You can disable this by removing the "can0-setup.service" at /etc/systemd/system/can0-setup.service
 
 You can now initiate the motor driver node by running:
 
