@@ -18,5 +18,6 @@ Contents
    velodyne
    camera
    launch
+   dds
    usage
    api
