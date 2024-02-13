@@ -3,7 +3,7 @@ ROS2 on Multiple Machines
 
 Utilizing the DDS (Data Distribution Service) in ROS2, it's feasible to send and receive messages across multiple machines without explicit configuration. This functionality is employed to control a robot, referred to as DBot, and to collect data from it using an external computer.
 
-For detailed information, refer to [this guide](https://roboticsbackend.com/ros2-multiple-machines-including-raspberry-pi/).
+For detailed information, refer to this`guide <https://roboticsbackend.com/ros2-multiple-machines-including-raspberry-pi>`
 
 .. note::
 
