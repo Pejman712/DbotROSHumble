@@ -1,7 +1,7 @@
 Velodyne VLP16
 ==============
 
-The Velodyne VLP16 is connected to the computer via Ethernet, using a fixed IP address of 192.168.1.100. To access the LiDAR settings, enter 192.168.1.201 in your web browser. To initiate the Velodyne driver node, use the following command:
+The Velodyne VLP16 is connected to the computer via Ethernet, using a fixed IP address of 192.168.2.100 (factory setting value is 192.168.2.100). To access the LiDAR settings, enter 192.168.2.201 (factory setting value is 192.168.2.201) in your web browser. To initiate the Velodyne driver node, use the following command:
 
 .. code-block:: console
 
@@ -26,7 +26,7 @@ If the connection between the computer and the Velodyne is compromised, you can 
 
 .. code-block:: console
 
-    $ sudo route add 192.168.1.100 enp89s0
-    $ sudo route add 192.168.1.201 enp89s0
-    $ sudo route add 192.168.1.255 enp89s0
+    $ sudo route add 192.168.2.100 enp89s0
+    $ sudo route add 192.168.2.201 enp89s0
+    $ sudo route add 192.168.2.255 enp89s0
 
