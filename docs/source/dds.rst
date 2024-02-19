@@ -20,11 +20,11 @@ Prerequisites
 
        $ hostname -I
 
-   This command will return an IP address, such as 192.168.103.122. Then, from the external computer, run:
+   This command will return an IP address, such as 192.168.1.102(). Then, from the external computer, run:
 
    .. code-block:: console
 
-       $ ping 192.168.103.122
+       $ ping 192.168.1.102
 
    If the ping is successful, communication between the external computer and DBot is established.
    
@@ -36,23 +36,19 @@ Prerequisites
 
        $ sudo apt-get install ros-humble-joy-linux
 
+
+SSH Connection 
+-------------
+
+To establish SSH connection make sure that dbot and the laptop are both connected to the same wifi. It is recommended to use wifi router mounted on top of dbot (Tp link M200). The password for the router is 52399565 and Dbot ip is set to 192.168.1.102, Therefore you can make ssh connection by: 
+
+.. code-block:: console
+
+    $ ssh dbot2@192.168.1.102
+
+
 Configuring Joystick Control
 ----------------------------
-
-1. Connect the joystick to the external PC and verify it by running:
-
-   .. code-block:: console
-
-       $ sudo jstest /dev/input/js0
-
-   If the terminal displays two 8 index matrices, the joystick is correctly detected.
-
-2. To publish joystick messages within the ROS environment, run:
-
-   .. code-block:: console
-
-       $ ros2 run joy_linux joy_linux_node
-
    If your joystick ID is not 'js0', replace XXX with your joystick ID and run:
 
    .. code-block:: console
