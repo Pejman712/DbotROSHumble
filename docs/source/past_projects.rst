@@ -65,28 +65,28 @@ All three algorithms were tested in a controlled simulated environment using Gaz
 
 A* offers the best balance for this application, with Dijkstra being slower and RRT less optimal for path quality which evident from the table above. All the maps and their path can be seen in the figures below.
 
-.. Figure:: /Images/DF_Cage_Map.png
+.. Figure:: ./../../Images/DF_Cage_Map.png
     :alt: D-Bot image
     :width: 400px
     :align: center
 
     **Figure 2.**  Aalto Design Factory Cage Map.
 
-.. Figure:: /Images/CERN_Map_1.png
+.. Figure:: ./../../Images/CERN_Map_1.png
     :alt: D-Bot image
     :width: 400px
     :align: center
 
     **Figure 3.** CERN Facility Map 1.
 
-.. Figure:: /Images/CERN_Map_2.png
+.. Figure:: ./../../Images/CERN_Map_2.png
     :alt: D-Bot image
     :width: 400px
     :align: center
 
     **Figure 4.** CERN Facility Map 2.
     
-.. Figure:: /Images/CERN_Map_3.png
+.. Figure:: ./../../Images/CERN_Map_3.png
     :alt: D-Bot image
     :width: 400px
     :align: center
