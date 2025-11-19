@@ -20,4 +20,5 @@ Contents
    launch
    dds
    usage
+   past_projects
    api
