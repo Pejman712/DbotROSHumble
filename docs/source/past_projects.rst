@@ -72,14 +72,14 @@ A* offers the best balance for this application, with Dijkstra being slower and 
 
     **Figure 2.**  Aalto Design Factory Cage Map.
 
-.. Figure:: ./../Images/CERN_Map_1.png
+.. Figure:: ./../../Images/CERN_Map_1.png
     :alt: D-Bot image
     :width: 400px
     :align: center
 
     **Figure 3.** CERN Facility Map 1.
 
-.. Figure:: ./../Images/CERN_Map_2.png
+.. Figure:: ./../../Images/CERN_Map_2.png
     :alt: D-Bot image
     :width: 400px
     :align: center
