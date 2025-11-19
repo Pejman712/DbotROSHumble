@@ -1,6 +1,6 @@
-Autonomous Navigation of Mobile Robots
+Past_Projects
 =====
-Introduction
+Autonomous Navigation of Mobile Robots
 ------------
 The robot is designed to transport heavy loads within CERN radiation facilities, where human presence is hazardous due to high radiation levels. Previously, robots were operated via teleoperation, but it posed several challenges, including operator fatigue, camera latency, and delayed control response. Continuous manual control made it difficult for operators to take breaks, leading to inefficiency and safety concerns. Introducing autonomous navigation allows the robot to operate independently during signal loss or operator absence, improving overall safety, efficiency, and enabling short breaks for human operators.
 
@@ -14,7 +14,7 @@ At CERN, radiation survey robots are tasked with monitoring and transporting equ
 
 .. for images the use slash not backslash is important. look if the block is not complete for text you have to give 2 lines spaces to end the bloack.
 
-.. Figure:: /Images/D_Bot_Image.png
+.. Figure:: ./../../Images/D_Bot_Image.png
     :alt: D Bot image
     :width: 400px
     :align: center
