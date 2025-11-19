@@ -86,7 +86,7 @@ A* offers the best balance for this application, with Dijkstra being slower and 
 
     **Figure 4.** CERN Facility Map 2.
     
-.. Figure:: ./../Images/CERN_Map_3.png
+.. Figure:: ./../../Images/CERN_Map_3.png
     :alt: D-Bot image
     :width: 400px
     :align: center
